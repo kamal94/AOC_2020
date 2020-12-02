@@ -1,7 +1,7 @@
 with open("1_input.txt") as fin:
-    dates = [
+    dates = sorted([
         int(line) for line in fin.readlines()
-    ]
+    ])
 
 couples = set()
 for date in dates:
